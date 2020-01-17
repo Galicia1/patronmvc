@@ -23,6 +23,8 @@ Route::get('/', function () {
 //app http y ahi estan los controllers
 
 //nombre de la clase y del controller
-Route::get('/noticias','NoticiaController@index');
-
+Route::get('/noticias','NoticiaController@index')->name('noticias.index');
+//para hacer parametros dinamicos se ponen entre llamves y se le da el no bre
+Route::get('/noticias/{id}','NoticiaController@show')->name('noticias.show');
+//misitio.com/noticias/8
 
