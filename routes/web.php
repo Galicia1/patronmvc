@@ -28,3 +28,5 @@ Route::get('/noticias','NoticiaController@index')->name('noticias.index');
 Route::get('/noticias/{id}','NoticiaController@show')->name('noticias.show');
 //misitio.com/noticias/8
 
+Route::get('/admin','AdminController@dashboard')->name('admin.dashboard');
+//php artisan make:controller AdminController
